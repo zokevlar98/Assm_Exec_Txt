@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+
 import os
 import sys
 import shutil
@@ -6,7 +7,7 @@ import zipfile
 import py7zr
 import oletools.olevba as olevba
 
-ALLOWED_EXTENSIONS = {'.exe', '.doc', '.xls', '.pdf', '.docm', '.xlsm'}  # à garder
+ALLOWED_EXTENSIONS = {'.exe', '.doc', '.xls', '.pdf', '.docm', '.xlsm'}
 SPECIAL_MACRO_EXTENSIONS = {'.doc', '.xls', '.docm', '.xlsm'}
 
 def extract_archives(directory):
@@ -64,7 +65,7 @@ def extract_macros(directory, output_dir):
 
 def main():
     if len(sys.argv) != 3:
-        print("Usage: prepare_batch.py <input_directory> <output_macro_directory>")
+        print("Usage: prepare_batch.py <malware_directory> <output_macro_directory>")
         sys.exit(1)
 
     input_directory = sys.argv[1]
