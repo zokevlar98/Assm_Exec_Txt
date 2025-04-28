@@ -1,0 +1,10 @@
+mov eax ebx
+push ebp mov
+call CreateFileA
+mov ecx VirtualAlloc
+xor eax eax
+jmp LoadLibraryA
+pushfd pushad mov
+call WriteProcessMemory
+mov edx CloseHandle
+jmp VirtualProtect

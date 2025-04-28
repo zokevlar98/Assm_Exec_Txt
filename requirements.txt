@@ -1,0 +1,4 @@
+capstone
+python-magic
+pefile
+pyelftools
