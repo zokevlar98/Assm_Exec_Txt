@@ -1,0 +1,11 @@
+push add push
+add push adc
+push adc xor
+adc xor add
+xor add add
+add add adc
+add adc out
+adc out sbb
+out sbb add
+sbb add mov
+add mov pop

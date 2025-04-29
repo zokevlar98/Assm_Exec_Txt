@@ -1,0 +1,9 @@
+mov cpuid jb
+cpuid jb cmp
+jb cmp mov
+cmp mov mov
+mov mov jb
+mov jb jbe
+jb jbe jb
+jbe jb mov
+jb mov jb

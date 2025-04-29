@@ -1,0 +1,5 @@
+or pop push
+pop push add
+push add ljmp
+add ljmp add
+ljmp add add

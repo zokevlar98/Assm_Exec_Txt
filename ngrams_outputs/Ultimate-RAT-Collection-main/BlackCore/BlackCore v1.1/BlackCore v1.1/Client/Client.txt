@@ -1,0 +1,17 @@
+clc xchg or
+xchg or imul
+or imul jmp
+imul jmp push
+jmp push push
+push push aaa
+push aaa mov
+aaa mov mov
+mov mov jns
+mov jns in
+jns in mov
+in mov mov
+mov mov mov
+mov mov mov
+mov mov salc
+mov salc dec
+salc dec sahf

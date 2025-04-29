@@ -1,0 +1,9 @@
+jmp and add
+and add inc
+add inc add
+inc add mov
+add mov std
+mov std daa
+std daa add
+daa add xchg
+add xchg xchg

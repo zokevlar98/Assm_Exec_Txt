@@ -1,0 +1,4 @@
+jmp add and
+add and mov
+and mov sub
+mov sub fcom

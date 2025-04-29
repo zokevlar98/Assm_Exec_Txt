@@ -1,0 +1,9 @@
+jmp mov jmp
+mov jmp mov
+jmp mov adc
+mov adc push
+adc push adc
+push adc sahf
+adc sahf out
+sahf out salc
+out salc inc

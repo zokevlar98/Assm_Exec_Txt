@@ -1,0 +1,6 @@
+stosb wait jbe
+wait jbe or
+jbe or pushal
+or pushal jo
+pushal jo dec
+jo dec push

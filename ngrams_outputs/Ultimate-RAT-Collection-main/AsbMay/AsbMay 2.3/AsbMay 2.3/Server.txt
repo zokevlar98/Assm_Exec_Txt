@@ -1,0 +1,7 @@
+jmp add add
+add add inc
+add inc inc
+inc inc add
+inc add fnsave
+add fnsave inc
+fnsave inc add

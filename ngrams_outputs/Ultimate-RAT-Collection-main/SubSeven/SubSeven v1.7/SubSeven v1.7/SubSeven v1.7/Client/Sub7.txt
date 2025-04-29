@@ -1,0 +1,4 @@
+pushal jmp pop
+jmp pop jmp
+pop jmp jmp
+jmp jmp jmp

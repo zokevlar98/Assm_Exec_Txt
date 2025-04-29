@@ -1,0 +1,15 @@
+and jae jb
+jae jb and
+jb and add
+and add outsb
+add outsb and
+outsb and add
+and add inc
+add inc add
+inc add mov
+add mov add
+mov add push
+add push add
+push add and
+add and and
+and and retf

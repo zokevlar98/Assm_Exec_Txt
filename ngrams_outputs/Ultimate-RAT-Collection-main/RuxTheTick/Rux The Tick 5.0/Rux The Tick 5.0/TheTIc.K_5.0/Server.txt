@@ -1,0 +1,7 @@
+sub mov out
+mov out pushal
+out pushal inc
+pushal inc out
+inc out jb
+out jb call
+jb call ja

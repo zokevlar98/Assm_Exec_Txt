@@ -1,0 +1,14 @@
+dec cld insd
+cld insd movsd
+insd movsd and
+movsd and add
+and add stosb
+add stosb cmp
+stosb cmp add
+cmp add stosb
+add stosb add
+stosb add add
+add add dec
+add dec daa
+dec daa in
+daa in dec

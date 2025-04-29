@@ -1,0 +1,13 @@
+add jnp add
+jnp add add
+add add dec
+add dec add
+dec add add
+add add add
+add add add
+add add mov
+add mov add
+mov add add
+add add add
+add add add
+add add push

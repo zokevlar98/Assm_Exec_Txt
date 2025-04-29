@@ -1,0 +1,10 @@
+mov adc add
+adc add inc
+add inc outsd
+inc outsd outsd
+outsd outsd insb
+outsd insb popal
+insb popal outsb
+popal outsb add
+outsb add or
+add or add

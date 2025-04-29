@@ -1,0 +1,9 @@
+add add add
+add add sbb
+add sbb arpl
+sbb arpl xchg
+arpl xchg iretd
+xchg iretd xlatb
+iretd xlatb pop
+xlatb pop xchg
+pop xchg cld

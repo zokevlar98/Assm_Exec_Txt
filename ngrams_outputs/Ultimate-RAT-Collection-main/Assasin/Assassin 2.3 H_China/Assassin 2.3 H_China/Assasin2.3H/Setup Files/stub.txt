@@ -1,0 +1,14 @@
+sub je imul
+je imul jmp
+imul jmp add
+jmp add pushfd
+add pushfd das
+pushfd das test
+das test lodsb
+test lodsb xlatb
+lodsb xlatb sub
+xlatb sub cmpsb
+sub cmpsb mov
+cmpsb mov mov
+mov mov inc
+mov inc xchg

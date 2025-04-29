@@ -1,0 +1,17 @@
+push mov jns
+mov jns push
+jns push dec
+push dec ljmp
+dec ljmp cmp
+ljmp cmp push
+cmp push sar
+push sar cmp
+sar cmp in
+cmp in pushfd
+in pushfd or
+pushfd or bound
+or bound push
+bound push imul
+push imul sbb
+imul sbb jle
+sbb jle or

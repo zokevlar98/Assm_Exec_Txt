@@ -1,0 +1,6 @@
+adc add mov
+add mov pcmpgtd
+mov pcmpgtd pcmpgtd
+pcmpgtd pcmpgtd push
+pcmpgtd push jb
+push jb adc

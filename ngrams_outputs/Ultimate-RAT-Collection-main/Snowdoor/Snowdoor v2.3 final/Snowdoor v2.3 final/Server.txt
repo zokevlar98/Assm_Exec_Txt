@@ -1,0 +1,16 @@
+inc add add
+add add jbe
+add jbe scasb
+jbe scasb jmp
+scasb jmp jb
+jmp jb inc
+jb inc sbb
+inc sbb jae
+sbb jae salc
+jae salc sub
+salc sub rcr
+sub rcr jns
+rcr jns in
+jns in push
+in push fstp
+push fstp pop

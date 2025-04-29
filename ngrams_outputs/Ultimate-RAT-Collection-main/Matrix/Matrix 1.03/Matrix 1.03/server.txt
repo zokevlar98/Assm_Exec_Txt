@@ -1,0 +1,11 @@
+sbb mov pushfd
+mov pushfd push
+pushfd push inc
+push inc pushfd
+inc pushfd push
+pushfd push js
+push js push
+js push wait
+push wait push
+wait push jp
+push jp push

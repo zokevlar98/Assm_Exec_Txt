@@ -1,0 +1,13 @@
+movsb sti mov
+sti mov and
+mov and inc
+and inc add
+inc add add
+add add sbb
+add sbb or
+sbb or add
+or add daa
+add daa fucomi
+daa fucomi push
+fucomi push add
+push add xor

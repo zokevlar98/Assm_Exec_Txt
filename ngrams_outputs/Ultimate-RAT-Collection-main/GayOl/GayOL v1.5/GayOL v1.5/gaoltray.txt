@@ -1,0 +1,15 @@
+adc fidiv pcmpgtd
+fidiv pcmpgtd pcmpgtd
+pcmpgtd pcmpgtd adc
+pcmpgtd adc jp
+adc jp jns
+jp jns or
+jns or jle
+or jle push
+jle push pop
+push pop xchg
+pop xchg adc
+xchg adc dec
+adc dec add
+dec add inc
+add inc add

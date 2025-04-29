@@ -1,0 +1,6 @@
+pop mov or
+mov or popfd
+or popfd lahf
+popfd lahf inc
+lahf inc add
+inc add cld

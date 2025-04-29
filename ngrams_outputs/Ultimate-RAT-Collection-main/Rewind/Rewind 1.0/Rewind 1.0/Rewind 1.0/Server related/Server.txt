@@ -1,0 +1,6 @@
+jmp add mov
+add mov inc
+mov inc add
+inc add mov
+add mov pop
+mov pop mov

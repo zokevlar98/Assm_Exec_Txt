@@ -1,0 +1,17 @@
+sahf dec push
+dec push insb
+push insb mov
+insb mov pcmpgtd
+mov pcmpgtd dec
+pcmpgtd dec push
+dec push outsb
+push outsb mov
+outsb mov sahf
+mov sahf add
+sahf add pop
+add pop mov
+pop mov add
+mov add dec
+add dec add
+dec add add
+add add rcl

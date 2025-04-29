@@ -1,0 +1,16 @@
+jmp std call
+std call in
+call in cmp
+in cmp jne
+cmp jne mov
+jne mov pop
+mov pop ret
+pop ret adc
+ret adc push
+adc push insd
+push insd imul
+insd imul call
+imul call add
+call add push
+add push or
+push or and

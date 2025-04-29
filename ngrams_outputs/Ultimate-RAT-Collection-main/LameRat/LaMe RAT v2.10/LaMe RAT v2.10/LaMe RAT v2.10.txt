@@ -1,0 +1,6 @@
+cld xchg xchg
+xchg xchg add
+xchg add ret
+add ret pop
+ret pop mov
+pop mov mul

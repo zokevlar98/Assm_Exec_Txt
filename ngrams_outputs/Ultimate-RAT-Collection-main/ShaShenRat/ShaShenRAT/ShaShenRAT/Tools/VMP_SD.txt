@@ -1,0 +1,8 @@
+in retf jo
+retf jo add
+jo add sal
+add sal and
+sal and pop
+and pop and
+pop and movsxd
+and movsxd sub

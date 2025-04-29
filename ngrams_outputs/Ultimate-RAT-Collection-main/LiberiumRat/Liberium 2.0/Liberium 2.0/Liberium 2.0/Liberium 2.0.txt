@@ -1,0 +1,10 @@
+rol add dec
+add dec add
+dec add add
+add add add
+add add add
+add add add
+add add add
+add add add
+add add push
+add push adc

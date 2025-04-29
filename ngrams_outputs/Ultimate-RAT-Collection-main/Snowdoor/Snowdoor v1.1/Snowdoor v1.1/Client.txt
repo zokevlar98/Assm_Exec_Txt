@@ -1,0 +1,10 @@
+pop or add
+or add pop
+add pop neg
+pop neg xchg
+neg xchg pop
+xchg pop call
+pop call or
+call or add
+or add wait
+add wait outsb

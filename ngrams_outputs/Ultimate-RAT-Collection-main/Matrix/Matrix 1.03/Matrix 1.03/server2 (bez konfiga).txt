@@ -1,0 +1,2 @@
+jmp and add
+and add xchg

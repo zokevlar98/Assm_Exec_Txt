@@ -1,0 +1,145 @@
+in test or
+test or pop
+or pop sbb
+pop sbb stosd
+sbb stosd in
+stosd in aas
+in aas add
+aas add test
+add test pop
+test pop inc
+pop inc ror
+inc ror add
+ror add adc
+add adc in
+adc in add
+in add cmp
+add cmp or
+cmp or xchg
+or xchg wait
+xchg wait test
+wait test xor
+test xor mov
+xor mov loop
+mov loop in
+loop in rcl
+in rcl inc
+rcl inc sar
+inc sar push
+sar push inc
+push inc pop
+inc pop adc
+pop adc xchg
+adc xchg ret
+xchg ret rcr
+ret rcr mov
+rcr mov inc
+mov inc les
+inc les inc
+les inc push
+inc push fisub
+push fisub out
+fisub out out
+out out sbb
+out sbb cmp
+sbb cmp cmp
+cmp cmp loope
+cmp loope mov
+loope mov mov
+mov mov mov
+mov mov fadd
+mov fadd mov
+fadd mov and
+mov and test
+and test aad
+test aad ret
+aad ret stosd
+ret stosd push
+stosd push dec
+push dec pushal
+dec pushal call
+pushal call pop
+call pop push
+pop push push
+push push bswap
+push bswap not
+bswap not pushfd
+not pushfd not
+pushfd not bswap
+not bswap jmp
+bswap jmp mov
+jmp mov pop
+mov pop mov
+pop mov or
+mov or jmp
+or jmp bnd jmp
+jmp bnd jmp jmp
+bnd jmp jmp bnd jmp
+jmp bnd jmp std
+bnd jmp std jmp
+std jmp jmp
+jmp jmp cld
+jmp cld jmp
+cld jmp retf
+jmp retf pop
+retf pop pop
+pop pop push
+pop push push
+push push bswap
+push bswap not
+bswap not pushfd
+not pushfd not
+pushfd not bswap
+not bswap jmp
+bswap jmp mov
+jmp mov pop
+mov pop mov
+pop mov or
+mov or jmp
+or jmp bnd jmp
+jmp bnd jmp jmp
+bnd jmp jmp bnd jmp
+jmp bnd jmp std
+bnd jmp std jmp
+std jmp jmp
+jmp jmp cld
+jmp cld jmp
+cld jmp retf
+jmp retf pop
+retf pop pop
+pop pop push
+pop push push
+push push bswap
+push bswap not
+bswap not pushfd
+not pushfd not
+pushfd not bswap
+not bswap jmp
+bswap jmp mov
+jmp mov pop
+mov pop mov
+pop mov or
+mov or jmp
+or jmp bnd jmp
+jmp bnd jmp jmp
+bnd jmp jmp bnd jmp
+jmp bnd jmp std
+bnd jmp std jmp
+std jmp jmp
+jmp jmp cld
+jmp cld jmp
+cld jmp retf
+jmp retf pop
+retf pop pop
+pop pop pushal
+pop pushal xor
+pushal xor jne
+xor jne jmp
+jne jmp jmp
+jmp jmp leave
+jmp leave jne
+leave jne jp
+jne jp jo
+jp jo jmp
+jo jmp call
+jmp call call

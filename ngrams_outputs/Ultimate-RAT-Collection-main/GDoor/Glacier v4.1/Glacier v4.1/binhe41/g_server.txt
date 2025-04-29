@@ -1,0 +1,14 @@
+and jae jb
+jae jb and
+jb and add
+and add outsb
+add outsb and
+outsb and add
+and add jno
+add jno dec
+jno dec and
+dec and lock add
+and lock add insd
+lock add insd xchg
+insd xchg or
+xchg or adc

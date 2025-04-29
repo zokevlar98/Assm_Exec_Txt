@@ -1,0 +1,16 @@
+in push add
+push add add
+add add add
+add add add
+add add add
+add add add
+add add add
+add add jl
+add jl add
+jl add add
+add add add
+add add add
+add add push
+add push movsb
+push movsb stc
+movsb stc add

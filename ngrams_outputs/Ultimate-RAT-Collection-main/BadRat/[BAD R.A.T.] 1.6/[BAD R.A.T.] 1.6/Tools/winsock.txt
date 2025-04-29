@@ -1,0 +1,5 @@
+std pop mov
+pop mov add
+mov add and
+add and sub
+and sub mov

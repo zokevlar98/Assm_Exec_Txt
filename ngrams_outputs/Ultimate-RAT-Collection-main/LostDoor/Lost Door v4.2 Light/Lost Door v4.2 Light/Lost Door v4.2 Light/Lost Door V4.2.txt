@@ -1,0 +1,7 @@
+dec and add
+and add lahf
+add lahf wait
+lahf wait wait
+wait wait push
+wait push pop
+push pop mov

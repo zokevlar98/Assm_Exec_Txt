@@ -1,0 +1,13 @@
+jp mov retf
+mov retf sahf
+retf sahf xchg
+sahf xchg pop
+xchg pop add
+pop add push
+add push add
+push add adc
+add adc pop
+adc pop sbb
+pop sbb add
+sbb add mov
+add mov pop

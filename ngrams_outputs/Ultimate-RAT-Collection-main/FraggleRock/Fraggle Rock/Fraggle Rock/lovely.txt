@@ -1,0 +1,7 @@
+add fidiv pcmpgtd
+fidiv pcmpgtd pcmpgtd
+pcmpgtd pcmpgtd push
+pcmpgtd push jb
+push jb adc
+jb adc jp
+adc jp sahf

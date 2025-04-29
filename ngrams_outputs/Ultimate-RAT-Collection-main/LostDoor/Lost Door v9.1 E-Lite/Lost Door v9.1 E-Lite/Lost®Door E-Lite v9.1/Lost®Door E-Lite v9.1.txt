@@ -1,0 +1,14 @@
+sahf add add
+add add add
+add add outsd
+add outsd stc
+outsd stc aas
+stc aas mov
+aas mov mov
+mov mov cmp
+mov cmp dec
+cmp dec add
+dec add add
+add add add
+add add add
+add add add

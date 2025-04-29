@@ -1,0 +1,17 @@
+and inc add
+inc add cmp
+add cmp xor
+cmp xor or
+xor or enter
+or enter sbb
+enter sbb enter
+sbb enter adc
+enter adc enter
+adc enter or
+enter or add
+or add dec
+add dec push
+dec push xor
+push xor cld
+xor cld cmp
+cld cmp sbb

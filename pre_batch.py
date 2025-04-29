@@ -4,34 +4,42 @@ import os
 import sys
 import shutil
 import zipfile
-import py7zr
+import subprocess
 import oletools.olevba as olevba
 
 ALLOWED_EXTENSIONS = {'.exe', '.doc', '.xls', '.pdf', '.docm', '.xlsm'}
 SPECIAL_MACRO_EXTENSIONS = {'.doc', '.xls', '.docm', '.xlsm'}
+PASSWORD = "infected"
 
 def extract_archives(directory):
     for root, _, files in os.walk(directory):
         for file in files:
             filepath = os.path.join(root, file)
+            extract_path = os.path.splitext(filepath)[0]
+
             if file.endswith('.zip'):
                 try:
+                    os.makedirs(extract_path, exist_ok=True)
                     with zipfile.ZipFile(filepath, 'r') as zip_ref:
-                        extract_path = os.path.splitext(filepath)[0]
-                        os.makedirs(extract_path, exist_ok=True)
-                        zip_ref.extractall(extract_path)
-                        print(f"Extracted zip: {filepath}")
+                        zip_ref.extractall(path=extract_path, pwd=PASSWORD.encode())
+                    print(f"Extracted zip: {filepath}")
                 except Exception as e:
-                    print(f"Failed to extract {filepath}: {e}")
+                    print(f"Failed to extract zip {filepath}: {e}")
+
             elif file.endswith('.7z'):
                 try:
-                    with py7zr.SevenZipFile(filepath, mode='r') as archive:
-                        extract_path = os.path.splitext(filepath)[0]
-                        os.makedirs(extract_path, exist_ok=True)
-                        archive.extractall(path=extract_path)
+                    os.makedirs(extract_path, exist_ok=True)
+                    result = subprocess.run(
+                        ['7z', 'x', f"-p{PASSWORD}", filepath, f"-o{extract_path}", "-y"],
+                        stdout=subprocess.PIPE,
+                        stderr=subprocess.PIPE
+                    )
+                    if result.returncode == 0:
                         print(f"Extracted 7z: {filepath}")
+                    else:
+                        print(f"Failed to extract 7z {filepath}:\n{result.stderr.decode().strip()}")
                 except Exception as e:
-                    print(f"Failed to extract {filepath}: {e}")
+                    print(f"Failed to extract 7z {filepath}: {e}")
 
 def remove_unwanted_files(directory):
     for root, _, files in os.walk(directory):
@@ -54,7 +62,7 @@ def extract_macros(directory, output_dir):
                 try:
                     vbaparser = olevba.VBA_Parser(filepath)
                     if vbaparser.detect_vba_macros():
-                        for (filename, stream_path, vba_filename, vba_code) in vbaparser.extract_macros():
+                        for (_, _, vba_filename, vba_code) in vbaparser.extract_macros():
                             macro_filename = os.path.join(output_dir, f"{os.path.basename(filepath)}_{vba_filename}")
                             with open(macro_filename, 'w') as macro_file:
                                 macro_file.write(vba_code)

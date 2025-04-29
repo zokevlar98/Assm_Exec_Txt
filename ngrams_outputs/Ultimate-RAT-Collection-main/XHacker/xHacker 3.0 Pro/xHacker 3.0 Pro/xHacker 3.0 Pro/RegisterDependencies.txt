@@ -1,0 +1,16 @@
+out adc push
+adc push jae
+push jae rcl
+jae rcl fadd
+rcl fadd js
+fadd js inc
+js inc jae
+inc jae jecxz
+jae jecxz jae
+jecxz jae jl
+jae jl jae
+jl jae dec
+jae dec jae
+dec jae dec
+jae dec inc
+dec inc jae

@@ -1,0 +1,12 @@
+push pop push
+pop push in
+push in pushfd
+in pushfd sbb
+pushfd sbb fild
+sbb fild add
+fild add rcl
+add rcl add
+rcl add adc
+add adc add
+adc add mov
+add mov pop

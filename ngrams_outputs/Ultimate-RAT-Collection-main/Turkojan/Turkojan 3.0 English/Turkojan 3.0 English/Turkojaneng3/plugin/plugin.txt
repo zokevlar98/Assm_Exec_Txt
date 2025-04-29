@@ -1,0 +1,16 @@
+push cdq sti
+cdq sti inc
+sti inc inc
+inc inc add
+inc add push
+add push push
+push push je
+push je imul
+je imul sub
+imul sub or
+sub or pop
+or pop mov
+pop mov dec
+mov dec movsb
+dec movsb cwde
+movsb cwde sub

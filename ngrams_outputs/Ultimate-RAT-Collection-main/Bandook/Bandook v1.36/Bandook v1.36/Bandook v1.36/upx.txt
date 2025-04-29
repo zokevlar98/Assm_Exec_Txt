@@ -1,0 +1,10 @@
+mov push adc
+push adc or
+adc or add
+or add add
+add add adc
+add adc adc
+adc adc jle
+adc jle add
+jle add sub
+add sub pop

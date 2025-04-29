@@ -1,5 +1,4 @@
 
-
 # Install the required packages
 sudo apt-get install libmagic1
 

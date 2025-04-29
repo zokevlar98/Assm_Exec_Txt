@@ -1,0 +1,5 @@
+add mov pcmpgtd
+mov pcmpgtd pcmpgtd
+pcmpgtd pcmpgtd adc
+pcmpgtd adc push
+adc push sahf

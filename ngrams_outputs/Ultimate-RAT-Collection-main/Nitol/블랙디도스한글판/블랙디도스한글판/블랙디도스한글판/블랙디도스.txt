@@ -1,0 +1,3 @@
+sbb add sahf
+add sahf idiv
+sahf idiv pop

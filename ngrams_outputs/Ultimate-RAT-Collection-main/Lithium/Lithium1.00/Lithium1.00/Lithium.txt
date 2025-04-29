@@ -1,0 +1,12 @@
+inc push jns
+push jns jmp
+jns jmp mov
+jmp mov nop
+mov nop push
+nop push sbb
+push sbb adc
+sbb adc sbb
+adc sbb nop
+sbb nop inc
+nop inc add
+inc add cld

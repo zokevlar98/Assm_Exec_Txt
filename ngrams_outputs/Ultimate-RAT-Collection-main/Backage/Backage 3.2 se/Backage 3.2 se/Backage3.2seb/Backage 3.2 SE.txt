@@ -1,0 +1,16 @@
+arpl sub pcmpgtd
+sub pcmpgtd pop
+pcmpgtd pop pcmpgtd
+pop pcmpgtd adc
+pcmpgtd adc add
+adc add adc
+add adc pop
+adc pop mov
+pop mov add
+mov add dec
+add dec add
+dec add add
+add add cmp
+add cmp add
+cmp add push
+add push pcmpgtd

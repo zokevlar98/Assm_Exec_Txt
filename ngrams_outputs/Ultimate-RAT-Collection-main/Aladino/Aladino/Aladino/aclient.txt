@@ -1,0 +1,7 @@
+xchg dec idiv
+dec idiv push
+idiv push call
+push call push
+call push push
+push push cmp
+push cmp and

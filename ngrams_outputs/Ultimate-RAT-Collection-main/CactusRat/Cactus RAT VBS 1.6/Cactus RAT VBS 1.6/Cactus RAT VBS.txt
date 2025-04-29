@@ -1,0 +1,4 @@
+dec add add
+add add inc
+add inc xor
+inc xor pop

@@ -1,0 +1,15 @@
+nop adc add
+adc add add
+add add dec
+add dec add
+dec add add
+add add add
+add add add
+add add jnp
+add jnp add
+jnp add add
+add add add
+add add add
+add add push
+add push rol
+push rol add

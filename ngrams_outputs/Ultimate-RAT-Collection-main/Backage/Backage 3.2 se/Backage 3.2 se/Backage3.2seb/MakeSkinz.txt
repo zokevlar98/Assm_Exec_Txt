@@ -1,0 +1,10 @@
+or xor or
+xor or inc
+or inc or
+inc or js
+or js js
+js js or
+js or lock or
+or lock or push
+lock or push or
+push or dec

@@ -1,0 +1,6 @@
+add fidiv pcmpgtd
+fidiv pcmpgtd pcmpgtd
+pcmpgtd pcmpgtd adc
+pcmpgtd adc push
+adc push loope
+push loope adc

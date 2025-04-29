@@ -1,0 +1,15 @@
+lodsd clc cmp
+clc cmp xchg
+cmp xchg test
+xchg test pop
+test pop add
+pop add pop
+add pop add
+pop add add
+add add pop
+add pop add
+pop add adc
+add adc mov
+adc mov add
+mov add sub
+add sub pop

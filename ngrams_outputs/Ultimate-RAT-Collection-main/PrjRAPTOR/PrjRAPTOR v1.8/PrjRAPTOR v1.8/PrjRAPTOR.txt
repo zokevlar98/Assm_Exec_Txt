@@ -1,0 +1,3 @@
+dec or add
+or add pop
+add pop inc

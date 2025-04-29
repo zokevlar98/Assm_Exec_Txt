@@ -1,0 +1,8 @@
+jne xor xchg
+xor xchg add
+xchg add add
+add add add
+add add sbb
+add sbb add
+sbb add mov
+add mov pop

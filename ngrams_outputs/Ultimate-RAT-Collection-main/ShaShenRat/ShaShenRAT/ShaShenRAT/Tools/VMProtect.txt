@@ -1,0 +1,14 @@
+adc je and
+je and stosd
+and stosd sub
+stosd sub pop
+sub pop test
+pop test imul
+test imul xor
+imul xor in
+xor in xor
+in xor push
+xor push movabs
+push movabs sub
+movabs sub scasd
+sub scasd adc

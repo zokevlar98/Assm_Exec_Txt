@@ -1,0 +1,10 @@
+enter add fidiv
+add fidiv pcmpgtd
+fidiv pcmpgtd pcmpgtd
+pcmpgtd pcmpgtd adc
+pcmpgtd adc push
+adc push loope
+push loope adc
+loope adc dec
+adc dec or
+dec or sahf

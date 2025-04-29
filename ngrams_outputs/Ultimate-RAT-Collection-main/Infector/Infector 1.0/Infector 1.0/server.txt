@@ -1,0 +1,11 @@
+xchg int xchg
+int xchg add
+xchg add pop
+add pop inc
+pop inc outsd
+inc outsd outsd
+outsd outsd insb
+outsd insb popal
+insb popal outsb
+popal outsb add
+outsb add add

@@ -1,0 +1,6 @@
+adc add pushaw
+add pushaw inc
+pushaw inc pcmpgtd
+inc pcmpgtd adc
+pcmpgtd adc push
+adc push sahf
