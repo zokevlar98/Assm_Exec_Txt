@@ -25,7 +25,7 @@ total_files=$(find "$MALWARE_DIR" -type f | wc -l)
 current=0
 
 # Parcourir tous les sous-dossiers de MALWARE_DIR
-find "$MALWARE_DIR" -type f | while read -r malware_file; do
+find "$MALWARE_DIR" -type f -print0 | while IFS= read -r -d '' malware_file; do
 	# Extraire juste le nom du fichier
 	filename=$(basename -- "$malware_file")
 	filename_no_ext="${filename%.*}"
@@ -44,10 +44,12 @@ find "$MALWARE_DIR" -type f | while read -r malware_file; do
 
 	# Call & faile
 	if python3 "$PYTHON_SCRIPT" "$malware_file" "$N_GRAMS" "$asm_output" "$ngrams_output"; then
-		echo "[$((++current))/$total_files] ✅ Processed: $filename"
+		((current++))
+		echo "[$current/$total_files] ✅ Processed: $filename"
 	else
-		echo "[$((++current))/$total_files] ❌ Failed: $filename"
-		echo "[$((++current))/$total_files] ❌ Failed: $filename" >> "$LOG_FILE"
+		((current++))
+		echo "[$current/$total_files] ❌ Failed: $filename"
+		echo "[$current/$total_files] ❌ Failed: $filename" >> "$LOG_FILE"
 	fi
 done
 
