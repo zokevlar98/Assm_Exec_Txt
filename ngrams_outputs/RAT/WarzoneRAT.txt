@@ -1,0 +1,16 @@
+ror add add
+add add add
+add add dec
+add dec add
+dec add add
+add add add
+add add add
+add add add
+add add add
+add add add
+add add dec
+add dec add
+dec add push
+add push inc
+push inc push
+inc push add

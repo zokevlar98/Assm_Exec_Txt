@@ -1,0 +1,4 @@
+mov pcmpgtd pcmpgtd
+pcmpgtd pcmpgtd adc
+pcmpgtd adc jp
+adc jp sahf

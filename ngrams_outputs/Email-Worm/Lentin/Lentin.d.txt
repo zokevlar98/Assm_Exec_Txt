@@ -1,0 +1,9 @@
+sti idiv dec
+idiv dec enter
+dec enter sal
+enter sal ror
+sal ror inc
+ror inc or
+inc or ret
+or ret nop
+ret nop add

@@ -1,0 +1,14 @@
+test inc add
+inc add add
+add add add
+add add add
+add add add
+add add add
+add add add
+add add add
+add add add
+add add add
+add add push
+add push dec
+push dec inc
+dec inc add

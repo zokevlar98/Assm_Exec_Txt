@@ -1,0 +1,6 @@
+mov xor aad
+xor aad add
+aad add and
+add and add
+and add add
+add add pop

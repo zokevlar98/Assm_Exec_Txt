@@ -1,0 +1,16 @@
+test
+inc
+add
+add
+add
+add
+add
+add
+add
+add
+add
+add
+push
+dec
+inc
+add

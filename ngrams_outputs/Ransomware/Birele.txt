@@ -1,0 +1,4 @@
+das stosb stosb
+stosb stosb xchg
+stosb xchg add
+xchg add jo

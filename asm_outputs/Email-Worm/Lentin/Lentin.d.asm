@@ -1,0 +1,11 @@
+sti
+idiv
+dec
+enter
+sal
+ror
+inc
+or
+ret
+nop
+add

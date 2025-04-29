@@ -1,0 +1,4 @@
+enter push call
+push call push
+call push inc
+push inc sbb

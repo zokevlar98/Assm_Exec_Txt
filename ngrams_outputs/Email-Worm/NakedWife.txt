@@ -1,0 +1,6 @@
+mov lodsb push
+lodsb push inc
+push inc lodsb
+inc lodsb push
+lodsb push js
+push js push
